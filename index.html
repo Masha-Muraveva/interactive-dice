@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
   <title>Кубик 🎲</title>
   <style>
     body {
@@ -47,6 +48,9 @@
   <div id="dice">🎲</div>
 
   <script>
+miro.onReady(() => {
+  console.log('Miro Plugin initialized');
+  // Здесь вызывайте вашу основную функцию инициализации кубика
     const dice = document.getElementById('dice');
 
     dice.addEventListener('click', () => {
@@ -61,6 +65,8 @@
         dice.classList.remove('rolling');
       }, 500); // длительность анимации
     });
+});
+
   </script>
 </body>
 </html>
