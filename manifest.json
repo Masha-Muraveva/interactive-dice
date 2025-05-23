@@ -3,6 +3,8 @@
   "description": "Интерактивный кубик для Miro",
   "apiVersion": "2.0",
   "permissions": ["BOARDS:READ", "BOARDS:WRITE"],
+  "redirectUris": ["/app-install/confirm/"],
+  "supportUrl": "https://masha-muraveva.github.io/interactive-dice/", 
   "toolbar": {
     "buttons": [
       {
